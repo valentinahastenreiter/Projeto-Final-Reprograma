@@ -1,0 +1,12 @@
+{
+    "avatarUrl": "https://i.picsum.photos/id/124/200/300.jpg?hmac=nYVSpzq7GaVkXrTk1whDiPbZdNRgtpJJXZJjvmUtFp0" ,
+    "nome": "Thiago",
+    "cep": "29010390",
+    "celular": "27998712287",
+    "endereco": {
+        "rua": "Rua Barão de Monjardim, 145",
+        "bairro": "Centro",
+        "cidade": "Vitória",
+        "estado": "Espirito Santo"
+    }
+}

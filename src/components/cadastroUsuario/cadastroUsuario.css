@@ -1,0 +1,92 @@
+.cadastroContainer {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-drawer-close {
+  color: #FFF;
+}
+
+.ant-drawer-body,
+.ant-drawer-header {
+  background-color: #28243b;
+}
+
+.usuarioInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.usuarioInfo .usuarioAvatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #CCC;
+  margin-bottom: 20px;
+}
+
+.usuarioInfo input {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: transparent;
+  border: transparent;
+}
+
+.usuarioInfo input::placeholder {
+  color: #FFF;
+  text-align: center;
+}
+
+.cadastroContainer .usuarioInfo input {
+ background-color: transparent;
+ border-top: hidden;
+ border-left: hidden;
+ border-right: hidden;
+ margin-bottom: 5px;
+ color: #FFF;
+}
+
+.cadastroContainer input::placeholder {
+  color: #FFF;
+ }
+
+.cadastroContainer .cadastroButton {
+  background-color: #d64d47;
+  font-weight: bold;
+  color: #FFF;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.vermelho {
+  border-bottom-color: #d64d47;
+}
+
+.laranja {
+  border-bottom-color: #e77c48;
+}
+
+.amarelo {
+  border-bottom-color: #e77c48;
+}
+
+.azul {
+  border-bottom-color: #37a0cd;
+}
+
+.verde {
+  border-bottom-color: #6db85d;
+}
+
+.roxo {
+  border-bottom-color: #816aa0;
+}
+

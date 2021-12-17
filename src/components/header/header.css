@@ -1,0 +1,20 @@
+.headerContainer {
+    background-color: #28243b;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+}
+
+.headerContainer p {
+    justify-content: center;
+    text-align: left;
+    color: #ffff;
+    font-size: 45px;
+
+}
+
+.headerContainer img {
+    background-color: #28243b;
+    height: 300px;
+    width: auto;
+}

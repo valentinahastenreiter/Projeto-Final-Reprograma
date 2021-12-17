@@ -1,0 +1,16 @@
+{
+    "avatarUrl": "https://avatars.githubusercontent.com/u/88274888?v=4",
+    "nome": "Valentina Hastenreiter",
+    "cep": "29010390",
+    "celular": "27992746778",
+    "profissao-servico": "Desenvolvedora Frontend",
+    "experiencia": "5 meses",
+    "portifolio": "https://github.com/valentinahastenreiter?tab=repositories",
+    "endereco": {
+        "rua": "Rua Barão de Monjardim, 145",
+        "bairro": "Centro",
+        "cidade": "Vitória",
+        "estado": "Espirito Santo"
+    },
+    "sobre": "Olá me chamo Valentina, sou técnica em edificações e graduanda em Engenharia Civil. Sempre fui apaixonada por tecnologia e apesar da vida me levado para outra área, aqui estou novamente, disposta a aprender e evoluir sempre. Sou aluna da {Reprograma} no curso de Desenvolvedora Front-end e cada dia mais estou me apaixonando pela área."
+}

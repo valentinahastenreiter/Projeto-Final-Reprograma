@@ -1,0 +1,36 @@
+.popup {
+  max-width: 150px;
+}
+
+.popup img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.formcontainer {
+  align-items: center;
+  justify-content: center;
+  background-color: #28243b ;
+  display: flex;
+  padding: 10px;
+}
+
+.formcontainer input {
+  font-size: 14px;
+  margin: 5px;
+  width: 200px;
+}
+
+.mapaContainer button {
+  align-items: center;
+  justify-content: center;
+  background-color: #d64d47;
+  font-weight: bold;
+  color: #FFF;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+  height: 30px;
+}
