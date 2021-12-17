@@ -9,6 +9,8 @@ const Map = ReactMapboxGl({
   accessToken: ACCESS_TOKEN
 })
 
+const mapBoxStyle = 'mapbox://styles/mapbox/streets-v10'
+
 const Mapa = () => {
   return (
     <div className="mapaContainer">
@@ -18,8 +20,10 @@ const Mapa = () => {
         <button type="submit">Buscar</button>
       </form>
 
+
+
       <Map
-        style={"mapbox://styles/mapbox/streets-v10"}
+        style={mapBoxStyle}
         center={[-40.32916950732293, -20.317755923578265]}
         zoom={[18]}
         containerStyle={{
