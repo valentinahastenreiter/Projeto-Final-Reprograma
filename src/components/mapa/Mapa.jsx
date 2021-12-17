@@ -9,8 +9,6 @@ const Map = ReactMapboxGl({
   accessToken: ACCESS_TOKEN
 })
 
-const mapBoxStyle = 'mapbox://styles/mapbox/streets-v10'
-
 const Mapa = () => {
   return (
     <div className="mapaContainer">
@@ -23,7 +21,8 @@ const Mapa = () => {
 
 
       <Map
-        style={mapBoxStyle}
+      // eslint-disable-next-line react/style-prop-object
+        style="mapbox://styles/mapbox/streets-v10"
         center={[-40.32916950732293, -20.317755923578265]}
         zoom={[18]}
         containerStyle={{
