@@ -37,6 +37,7 @@
   border-right: hidden;
   margin-bottom: 5px;
   color: #FFF;
+  justify-content: center;
  }
  
  .prestadorInfo input {

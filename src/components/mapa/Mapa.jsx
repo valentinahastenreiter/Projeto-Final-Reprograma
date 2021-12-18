@@ -26,7 +26,7 @@ const Mapa = () => {
         center={[-40.32916950732293, -20.317755923578265]}
         zoom={[18]}
         containerStyle={{
-          height: '54.4vh',
+          height: '57.5vh',
           width: '100vw'
         }}
       >
