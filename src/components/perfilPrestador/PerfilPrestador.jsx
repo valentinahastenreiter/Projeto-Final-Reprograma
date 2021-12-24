@@ -1,19 +1,21 @@
 import './perfilprestador.css'
-import data from '../../data/prestador.json'
+import { useState, useEffect } from 'react'
 
 const PerfilPrestador = () => {
-    return (
+    const [repositorio, setRepositorio] = useState ([])
+
+     return (
         <section className='prestadorContainer'>
         <div className='prestadoInfoBasicas'>
-            <img src={data.avatarUrl} alt="" />
-            <h1 className='prestadorNome'>{data.nome}</h1>
-            <h2 className='prestadorProfissao'>{data['profissao-servico']}</h2>
+            <img src={repositorio.avatarUrl} alt="" />
+            <h1 className='prestadorNome'>{repositorio.nome}</h1>
+            <h2 className='prestadorProfissao'>{repositorio['profissao-servico']}</h2>
         </div>
         <div className='prestadorDados'>
-            <p className='prestadorExperiencia'>{data.experiencia}</p>
-            <p className='prestadorPortifolio'>{data.portifolio}</p>
-            <p className='prestadorContato'>{data.celular}</p> 
-            <p className='prestadorSobre'>{data.sobre}</p>
+            <p className='prestadorExperiencia'>{repositorio.experiencia}</p>
+            <p className='prestadorPortifolio'>{repositorio.portifolio}</p>
+            <p className='prestadorContato'>{repositorio.celular}</p> 
+            <p className='prestadorSobre'>{repositorio.sobre}</p>
         </div>
         <button type='submit'>Me contrate</button>
         <button type='submit'>Avaliar</button>

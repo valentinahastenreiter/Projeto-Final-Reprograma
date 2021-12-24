@@ -1,15 +1,28 @@
 import 'mapbox-gl/dist/mapbox-gl.css'
 import ReactMapboxGl, { Popup } from 'react-mapbox-gl'
 import { ACCESS_TOKEN } from '../../constants'
-import prestadoresData from '../../data/mapa.json'
+import { useState, useEffect } from 'react'
+// import prestadoresData from '../../data/mapa.json'
 import './mapa.css'
-
 
 const Map = ReactMapboxGl({
   accessToken: ACCESS_TOKEN
+
 })
 
 const Mapa = () => {
+
+  const [repositorio, SetRepositorio] = useState([])
+
+useEffect (() => {
+    const getDados = async() => {
+        const response = await fetch('https://my-json-server.typicode.com/valentinahastenreiter/repo-acue')
+        const data = await response.json()
+        SetRepositorio(data)
+    }
+    getDados()
+}, [])
+
   return (
     <div className="mapaContainer">
       <form className="formcontainer" action="">
@@ -17,8 +30,6 @@ const Mapa = () => {
         <input type="text" placeholder="Digite o seu CEP" />
         <button type="submit">Buscar</button>
       </form>
-
-
 
       <Map
       // eslint-disable-next-line react/style-prop-object
@@ -30,15 +41,15 @@ const Mapa = () => {
           width: '100vw'
         }}
       >
-        {prestadoresData.map(prestador => (
+        {repositorio.map(repo => (
           <Popup
             className="popup"
-            key={prestador.id}
-            coordinates={prestador.coordinates}
+            key={repo.id}
+            coordinates={repo.coordinates}
             anchor="center"
           >
-            <img src={prestador.avatarUrl} alt={prestador.nome} />
-            <h4>{prestador.nome}</h4>
+            <img src={repo.avatarUrl} alt={repo.nome} />
+            <h4>{repo.nome}</h4>
           </Popup>
         ))}
       </Map>
